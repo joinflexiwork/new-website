@@ -302,6 +302,22 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
 }
+@media (max-width: 600px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .why-item {
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+  }
+  .why-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
 .why-item {
   padding: 0 32px;
   border-right: 1px solid var(--border);
