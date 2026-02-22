@@ -599,8 +599,6 @@
       .perks-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 600px) {
-      .nav-links { display: none; }
-      
       #hero { padding: 56px 0 44px; }
       .for-grid { grid-template-columns: 1fr; }
       .features-grid { grid-template-columns: 1fr; }
@@ -1126,7 +1124,7 @@
       document.getElementById('email').focus(); return;
     }
     const data = new FormData(this);
-    fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    fetch('https://formspree.io/f/xojnkkrj', {
       method: 'POST', body: data, headers: { Accept: 'application/json' }
     }).finally(() => {
       document.getElementById('beta-form').style.display = 'none';
